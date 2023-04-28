@@ -30,7 +30,8 @@ $dailyLeaderboardQuery = "
 $totalLeaderboardResult = $conn->query($totalLeaderboardQuery);
 $dailyLeaderboardResult = $conn->query($dailyLeaderboardQuery);
 
-function displayLeaderboard($result, $scoreColumnName) {
+function displayLeaderboard($result, $scoreColumnName)
+{
     if ($result->rowCount() > 0) {
         echo "<table class='table-auto w-full'>";
         echo "<thead>";
@@ -55,8 +56,8 @@ function displayLeaderboard($result, $scoreColumnName) {
 
             echo "<tr class='$rankingClass'>";
             echo "<td class='border px-4 py-2 text-lg font-semibold'>" . $rank . "</td>";
-            echo "<td class='border px-4 py-2 text-lg'>" . htmlspecialchars($row['name']) . "</td>";
-            echo "<td class='border px-4 py-2 text-lg'>" . $row[$scoreColumnName] . "</td>";
+            echo "<td class='border px-4 py-2 text-lg player-name'>" . htmlspecialchars($row['name']) . "</td>";
+            echo "<td class='border px-4 py-2 text-lg player-score'>" . $row[$scoreColumnName] . "</td>";
             echo "</tr>";
 
             $rank++;

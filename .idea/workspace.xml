@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_history.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/leaderboard_functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/update_score.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/animal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leaderboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manual_scoring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/animal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/another.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/game_records.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/leaderboard.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/players.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/game_history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/DS201906079/Downloads/Github/Personal/ScoreBoard",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\DS201906079\\Downloads\\Github\\Personal\\ScoreBoard\\poker-scoring\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DS201906079/Downloads/Github/Personal/ScoreBoard&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\DS201906079\\Downloads\\Github\\Personal\\ScoreBoard\\poker-scoring\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JavaScript 调试.Debug Application">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:5173">
       <method v="2" />
@@ -156,6 +138,7 @@
       <workItem from="1682401031600" duration="1583000" />
       <workItem from="1682405672977" duration="7000" />
       <workItem from="1682662249123" duration="6160000" />
+      <workItem from="1682669768174" duration="621000" />
     </task>
     <servers />
   </component>

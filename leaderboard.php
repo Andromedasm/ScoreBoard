@@ -31,6 +31,17 @@
             transform: scale(1.1);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .player-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #4a5568; /* 更深的灰色 */
+        }
+
+        .player-score {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #718096; /* 浅灰色 */
+        }
     </style>
 </head>
 <body class="bg-gray-100">

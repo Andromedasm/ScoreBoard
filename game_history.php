@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>游戏历史记录</title>
+    <title>Game History</title>
+    <style>
+        tbody tr:nth-child(odd) {
+            background-color: rgba(229, 231, 235, 0.5); /* 这是一个浅灰色背景 */
+        }
+        .name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .round {
+            font-style: italic;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 <div class="container mx-auto py-8">
-    <h1 class="text-3xl mb-6">游戏历史记录</h1>
+    <h1 class="text-3xl mb-6">Game History</h1>
 
     <table class="w-full bg-white shadow rounded overflow-hidden">
         <thead class="bg-gray-200">
         <tr>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">玩家</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">游戏回合</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">游戏时间</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">得分</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Player</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Round</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Datetime</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Score</th>
         </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
@@ -34,10 +48,22 @@
         // 循环显示游戏历史记录
         foreach ($result as $row) {
             echo "<tr>";
-            echo "<td class=\"px-6 py-4 whitespace-nowrap\">" . htmlspecialchars($row["name"]) . "</td>";
-            echo "<td class=\"px-6 py-4 whitespace-nowrap\">" . htmlspecialchars($row["game_round"]) . "</td>";
+            echo "<td class=\"px-6 py-4 whitespace-nowrap name\">" . htmlspecialchars($row["name"]) . "</td>";
+            echo "<td class=\"px-6 py-4 whitespace-nowrap round\">" . htmlspecialchars($row["game_round"]) . "</td>";
             echo "<td class=\"px-6 py-4 whitespace-nowrap\">" . htmlspecialchars($row["game_time"]) . "</td>";
-            echo "<td class=\"px-6 py-4 whitespace-nowrap\">" . htmlspecialchars($row["score"]) . "</td>";
+
+            // 根据分数显示相应的图标
+            $score = htmlspecialchars($row["score"]);
+            if ($score >= 3) {
+                echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥇</td>";
+            } elseif ($score == 2) {
+                echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥈</td>";
+            } elseif ($score == 1) {
+                echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥉</td>";
+            } else {
+                echo "<td class=\"px-6 py-4 whitespace-nowrap\">🤡</td>";
+            }
+
             echo "</tr>";
         }
 

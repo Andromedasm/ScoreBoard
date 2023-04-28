@@ -1,6 +1,0 @@
-
-TWeb:TableWithoutCaptionCheck" Add a description to this table.(©Ùì­ıÿÿÿÿ8ÜÛ´ü0
-kphp:S103"KSplit this 191 characters long line (which is greater than 120 authorized).(“°öÊøÿÿÿÿ8±ÜÛ´ü0
-€	php:S1192'"eDefine a constant instead of duplicating this literal "<td class="text-gray-700 px-4 py-2">" 3 times.(Õ×¸=8±ÜÛ´ü0
-a	php:S1192'"FDefine a constant instead of duplicating this literal "</td>" 3 times.(Õ×¸=8±ÜÛ´ü0
-l	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28øÄİ´ü0
