@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/game_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/game_history.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard.php" afterDir="false" />
-    </list>
+    <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +32,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\PHP\php.exe" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -138,7 +136,7 @@
       <workItem from="1682401031600" duration="1583000" />
       <workItem from="1682405672977" duration="7000" />
       <workItem from="1682662249123" duration="6160000" />
-      <workItem from="1682669768174" duration="621000" />
+      <workItem from="1682669768174" duration="1337000" />
     </task>
     <servers />
   </component>

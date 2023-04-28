@@ -1,0 +1,8 @@
+
+kphp:S103_"KSplit this 136 characters long line (which is greater than 120 authorized).(ğÑÆ­øÿÿÿÿ8€Ò™¶ü0
+kphp:S103n"KSplit this 146 characters long line (which is greater than 120 authorized).(©îş¯ûÿÿÿÿ8ÃÈ¼¶ü0
+fphp:S103y"KSplit this 131 characters long line (which is greater than 120 authorized).(ÂŒ˜¦8€Ò™¶ü0
+kphp:S103|"KSplit this 266 characters long line (which is greater than 120 authorized).(ñ·éåøÿÿÿÿ8€Ò™¶ü0
+lphp:S103‡"KSplit this 137 characters long line (which is greater than 120 authorized).(Ø«ö„úÿÿÿÿ8ÃÈ¼¶ü0
+:php:S113"'Add a new line at the end of this file.8¦¼œ¶ü0
+l	php:S4833K"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28Ò™¶ü0
