@@ -1,0 +1,53 @@
+html, body, div, figure, p, h1, h2, ul, li, input, button, textarea {margin:0; padding:0; box-sizing: border-box; font-family: sans-serif;}
+body {background-color: #9b8975; padding: 0 20%;}
+h1 {padding:30px 0; text-align: center; font-size: 50px; color: #fff8dc;}
+.leaderboard {list-style: none;}
+.leaderboard .person {background-color: #2d3e50; padding: 0 0 0 70px; width: 100%; height: 70px; margin-bottom: 12px; overflow: hidden; position: relative;}
+.leaderboard .person .icon {position: absolute; top: 0; left: 0; font-size: 50px; line-height: 70px; background: #fff8dc;}
+.leaderboard .person .nickname {padding: 0 0 0 10px; font-size: 30px; line-height: 70px; color: #fff;}
+.leaderboard .person .score {position: absolute; top: 0; right: 0; font-size: 50px; line-height: 70px; background: #dc3546; color: #fff; width: 120px; text-align: center; z-index: 10; cursor: pointer;}
+.leaderboard .person.open .point-btns { right: 120px; }
+.leaderboard .person .point-btns {position: absolute; list-style: none; top: 0; right: -100%; height: 100%; font-size: 0; transition: right 0.5s ease-out; z-index: 1;}
+.leaderboard .person .point-btns .point-btn {display: inline-block; height: 100%; width: 70px; background-color: #ccc; font-size: 30px; text-align: center; line-height: 70px; cursor: pointer;}
+.leaderboard .person .point-btns .point-btn--1 {background: #efd68d; color: #a79255;}
+.leaderboard .person .point-btns .point-btn--2 {background: #f7ce52; color: #9a802f;}
+.leaderboard .person .point-btns .point-btn--5 {background: #fec107; color: #735d1a;}
+.leaderboard .person .point-btns .point-btn-1 {background: #5ace72; color: #bef5ca;}
+.leaderboard .person .point-btns .point-btn-2 {background: #3dc159; color: #a0efb1;}
+.leaderboard .person .point-btns .point-btn-5 {background: #29a744; color: #a0efb1; border-right: 2px solid #1e9237;}
+
+.add-person {position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; border-radius: 50%; background: #17a2b9; line-height: 50px; text-align: center; font-size: 40px; color: #fff; cursor: pointer;}
+.add-person-popup {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; background-color: rgb(0 0 0 / 70%);}
+body.show-add-person .add-person-popup {display: block;}
+body.show-add-person {overflow: hidden;}
+.add-person-popup .box {display: inline-block; height: 500px; width: 500px; background: #353a40; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 6px dashed #fff8dc; text-align:center;}
+.add-person-popup .box .random-icon {width: 200px; height: 200px; font-size: 100px; line-height: 200px; background: #fff; display: inline-block; border-radius: 50%; margin: 25px 0; border: none; padding: 0; text-align: center; color: #000;}
+.add-person-popup .box input {height: 60px; line-height: 50px; font-size: 50px; border: none; background: #9b8975; color: #fff; text-align: center; width: 95%; margin-bottom: 10px;}
+.add-person-popup .box input::-webkit-input-placeholder {color: #7d6c59;}
+.add-person-popup .box #score {width: 250px;}
+.add-person-popup .box button {cursor: pointer; text-align: center; position: absolute; bottom: 0; width: 50%; height: 60px; border: none; font-size: 25px; font-weight: 700; color: #fff;}
+.add-person-popup .box button.ok {right: 0; background: #29a744;}
+.add-person-popup .box button.cancel {left: 0; background: #1b252f;}
+
+.edit {position: fixed; bottom: 30px; right: 90px; width: 50px; height: 50px; line-height: 50px; text-align: center; font-size: 40px; color: #fff; cursor: pointer;}
+.edit-popup {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; background-color: rgb(0 0 0 / 70%);}
+body.show-edit .edit-popup {display: block;}
+body.show-edit {overflow: hidden;}
+.edit-popup .box {display: inline-block; height: 500px; width: 500px; background: #353a40; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 6px dashed #fff8dc; text-align:center;}
+.edit-popup .box textarea {width: 100%; background: #353a40; box-sizing: border-box; font-size: 20px; color: #fff; border: none; padding: 15px; height: calc(100% - 60px);}
+.edit-popup .box button {cursor: pointer; text-align: center; position: absolute; bottom: 0; width: 50%; height: 60px; border: none; font-size: 25px; font-weight: 700; color: #fff;}
+.edit-popup .box button.ok {right: 0; background: #29a744;}
+.edit-popup .box button.cancel {left: 0; background: #1b252f;}
+
+.link {position: fixed; bottom: 30px; left: 30px; width: 50px; height: 50px; line-height: 50px; text-align: center; font-size: 40px; color: #fff; cursor: pointer;}
+.link-popup {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; background-color: rgb(0 0 0 / 70%);}
+body.show-link .link-popup {display: block;}
+body.show-link {overflow: hidden;}
+.link-popup .box {display: inline-block; height: 500px; width: 500px; background: #353a40; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 6px dashed #fff8dc; text-align:center;}
+.link-popup .box textarea {width: 100%; background: #353a40; box-sizing: border-box; font-size: 20px; color: #fff; border: none; padding: 15px; height: calc(100% - 60px);}
+.link-popup .box textarea::selection {background: #ccc;}
+.link-popup .box button {cursor: pointer; text-align: center; position: absolute; bottom: 0; width: 50%; height: 60px; border: none; font-size: 25px; font-weight: 700; color: #fff;}
+.link-popup .box button.close {left: 0; background: #1b252f; width: 100%;}
+
+
+#gh-icon {position: absolute; top: 0; right: 0;}
