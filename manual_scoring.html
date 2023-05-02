@@ -1,10 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="scss/pure.css" rel="stylesheet">
+    <title>Manual Scoring</title>
+    <?php include 'sidebar.php'; ?>
 </head>
-<body>
+<body class="bg-gray-100">
+
+<div class="container mx-auto py-8">
+    <h1 class="text-3xl mb-6">Manual Scoring</h1>
+
+    <form id="score-form" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+                积分倍数
+            </label>
+            <select
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="multiplier" name="multiplier">
+                <option value="1">1 倍</option>
+                <option value="2">2 倍</option>
+                <option value="3">3 倍</option>
+            </select>
+        </div>
+        <!-- 在这里插入动态生成的玩家列表 -->
+        <div id="player-list"></div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+               href="view_scores.php">
+                Check Scores
+            </a>
+        </div>
+    </form>
+
+<script>
+    // 将 manual_scoring.js 中的 JavaScript 代码添加到此处
+    document.addEventListener("DOMContentLoaded", () => {
+        const allSelects = document.querySelectorAll("select[name^='player']");
+        const initialOptions = allSelects[0].innerHTML;
+
+        function updateSelectOptions() {
+            // ...
+        }
+
+        function isUniqueSelection() {
+            // ...
+        }
+
+        allSelects.forEach((select) => {
+            select.addEventListener("change", updateSelectOptions);
+        });
+
+        const scoreForm = document.getElementById("score-form");
+        scoreForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            if (!isUniqueSelection()) {
+                alert("错误：选择的名次不能重复，请重新选择。");
+                return;
+            }
+
+            // 将表单数据转换为FormData对象
+            const formData = new FormData(scoreForm);
+
+            try {
+                // 向后端发送异步请求
+                const response = await fetch("api/manual_scoring.php", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    alert("成功添加游戏记录！");
+                    scoreForm.reset();
+                } else {
+                    alert("提交失败，请稍后重试。");
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert("提交失败，请检查网络连接。");
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
