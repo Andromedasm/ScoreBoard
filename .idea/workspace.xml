@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/scss/pure.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pure.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/sidebar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +145,8 @@
       <workItem from="1682919984545" duration="23000" />
       <workItem from="1683006217753" duration="549000" />
       <workItem from="1683008559468" duration="1459000" />
-      <workItem from="1683010047191" duration="342000" />
+      <workItem from="1683010047191" duration="515000" />
+      <workItem from="1683011253267" duration="2597000" />
     </task>
     <servers />
   </component>

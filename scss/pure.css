@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
+
 :root {
     --accent-color: #fff;
     --gradient-color: #FBFBFB;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +19,7 @@ body{
     background-image: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     width: 240px;
     left: -240px;
@@ -25,7 +27,8 @@ body{
     background-color: #fff;
     transition: all .5s ease;
 }
-.sidebar header{
+
+.sidebar-header {
     font-size: 28px;
     color: #353535;
     line-height: 70px;
@@ -34,7 +37,8 @@ body{
     user-select: none;
     font-family: 'Lato', sans-serif;
 }
-.sidebar a{
+
+.sidebar-link {
     display: block;
     height: 65px;
     width: 100%;
@@ -46,23 +50,30 @@ body{
     font-family: 'Lato', sans-serif;
     transition: all .5s ease;
 }
-a.active,a:hover{
+
+.sidebar-link.active,
+.sidebar-link:hover {
     border-left: 5px solid var(--accent-color);
     color: #fff;
     background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
 }
-.sidebar a i{
+
+.sidebar-link i {
     font-size: 23px;
     margin-right: 16px;
 }
-.sidebar a span{
+
+.sidebar-link span {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-#check{
+
+.sidebar-check {
     display: none;
 }
-label #btn,label #cancel{
+
+.sidebar-label .sidebar-btn,
+.sidebar-label .sidebar-cancel {
     position: absolute;
     left: 5px;
     cursor: pointer;
@@ -71,75 +82,90 @@ label #btn,label #cancel{
     margin: 15px 30px;
     font-size: 29px;
     background-color: #e8d1ff;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-    3.5px 3.5px 20px 0px rgba(0,0,0,.1),
-    2px 2px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, .1),
+    3.5px 3.5px 20px 0px rgba(0, 0, 0, .1),
+    2px 2px 5px 0px rgba(0, 0, 0, .1);
     height: 45px;
     width: 45px;
     text-align: center;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
     line-height: 45px;
     transition: all .5s ease;
 }
-label #cancel{
+
+.sidebar-label .sidebar-cancel {
     opacity: 0;
     visibility: hidden;
 }
-#check:checked ~ .sidebar{
+
+.sidebar-check:checked ~ .sidebar {
     left: 0;
 }
-#check:checked ~ label #btn{
+
+.sidebar-check:checked ~ .sidebar-label .sidebar-btn {
     margin-left: 245px;
     opacity: 0;
     visibility: hidden;
 }
-#check:checked ~ label #cancel{
+
+.sidebar-check:checked ~ .sidebar-label .sidebar-cancel {
     margin-left: 245px;
     opacity: 1;
     visibility: visible;
 }
-@media(max-width : 860px){
-    .sidebar{
+
+@media (max-width: 860px) {
+    .sidebar {
         height: auto;
         width: 70px;
         left: 0;
         margin: 100px 0;
     }
-    header,#btn,#cancel{
+
+    .sidebar-header,
+    .sidebar-label .sidebar-btn,
+    .sidebar-label .sidebar-cancel {
         display: none;
     }
-    span{
+
+    .sidebar-link span {
         position: absolute;
         margin-left: 23px;
         opacity: 0;
         visibility: hidden;
     }
-    .sidebar a{
+
+    .sidebar-link {
         height: 60px;
     }
-    .sidebar a i{
+
+    .sidebar-link i {
         margin-left: -10px;
     }
-    a:hover {
+
+    .sidebar-link:hover {
         width: 200px;
         background: inherit;
     }
-    .sidebar a:hover span{
+
+    .sidebar-link:hover span {
         opacity: 1;
         visibility: visible;
     }
 }
 
-.sidebar > a.active,.sidebar > a:hover:nth-child(even) {
+.sidebar > .sidebar-link.active,
+.sidebar > .sidebar-link:hover:nth-child(even) {
     --accent-color: #52d6f4;
     --gradient-color: #c1b1f7;
 }
-.sidebar a.active,.sidebar > a:hover:nth-child(odd) {
+
+.sidebar .sidebar-link.active,
+.sidebar > .sidebar-link:hover:nth-child(odd) {
     --accent-color: #c1b1f7;
     --gradient-color: #A890FE;
 }
-
 
 .frame {
     width: 50%;
@@ -166,3 +192,4 @@ p {
     color: #d6adff;
     margin: 0;
 }
+

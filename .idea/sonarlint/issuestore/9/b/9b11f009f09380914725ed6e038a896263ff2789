@@ -1,0 +1,6 @@
+
+kphp:S1039"KSplit this 133 characters long line (which is greater than 120 authorized).(Ø«ö„úÿÿÿÿ8Òáó¶ü0
+G	php:S20031"&Replace "include" with "include_once".(½áÒŒøÿÿÿÿ8¨ŸÔÙı0
+G	php:S20036"&Replace "require" with "require_once".(ÁÄÉÔûÿÿÿÿ8Ò±€·ü0
+m	php:S48331"LReplace "include" with namespace import mechanism through the "use" keyword.(½áÒŒøÿÿÿÿ8¨ŸÔÙı0
+m	php:S48336"LReplace "require" with namespace import mechanism through the "use" keyword.(ÁÄÉÔûÿÿÿÿ8Ò±€·ü0
