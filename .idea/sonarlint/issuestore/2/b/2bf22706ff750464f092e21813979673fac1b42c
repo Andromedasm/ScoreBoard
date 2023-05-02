@@ -1,0 +1,4 @@
+
+kphp:S103"KSplit this 157 characters long line (which is greater than 120 authorized).(¤šÒ¤ıÿÿÿÿ8ßÁÇÜı0
+>	php:S1780"Remove this closing tag "?>".(Ö‘äÏúÿÿÿÿ8àÁÇÜı0
+m	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(†ã¥ø8áÁÇÜı0
