@@ -1,5 +1,7 @@
 
-OWeb:TableWithoutCaptionCheck" Add a description to this table.(†ï²Ÿ8³á„´ü0
-dphp:S103-"KSplit this 158 characters long line (which is greater than 120 authorized).(–íÀƒıÿÿÿÿ
-g	php:S11923"FDefine a constant instead of duplicating this literal "</td>" 3 times.(‰ó„íûÿÿÿÿ8¶´Ö·ü0
-l	php:S4833'"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28Öá„´ü0
+OWeb:TableWithoutCaptionCheck" Add a description to this table.(†ï²Ÿ8³á„´ü0
+dphp:S1031"KSplit this 158 characters long line (which is greater than 120 authorized).(–íÀƒıÿÿÿÿ
+g	php:S11927"FDefine a constant instead of duplicating this literal "</td>" 3 times.(‰ó„íûÿÿÿÿ8¶´Ö·ü0
+G	php:S2003"&Replace "include" with "include_once".(½áÒŒøÿÿÿÿ8ÙÙı0
+m	php:S4833"LReplace "include" with namespace import mechanism through the "use" keyword.(½áÒŒøÿÿÿÿ8ÙÙı0
+l	php:S4833+"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28Öá„´ü0

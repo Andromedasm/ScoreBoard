@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="scss/pure.css" rel="stylesheet">
     <title>Game History</title>
     <style>
         tbody tr:nth-child(odd) {
@@ -19,6 +22,7 @@
             font-size: 1.1em;
         }
     </style>
+    <?php include 'sidebar.php'; ?>
 </head>
 <body class="bg-gray-100">
 <div class="container mx-auto py-8">

@@ -1,0 +1,5 @@
+
+fphp:S103"KSplit this 144 characters long line (which is greater than 120 authorized).(±‘–²8şÆ÷×ı0
+X	php:S1808"=Move this open curly brace to the beginning of the next line.(–‚Ú8€Ç÷×ı0
+B	php:S2003"&Replace "include" with "include_once".(¹­”œ8Ç÷×ı0
+h	php:S4833"LReplace "include" with namespace import mechanism through the "use" keyword.(¹­”œ8‚Ç÷×ı0

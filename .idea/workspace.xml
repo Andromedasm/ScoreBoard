@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="" />
+    <list default="true" id="07b40092-888b-40bc-959e-78a2491befbe" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/game_history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/leaderboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manual_scoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/manual_scoring.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +26,8 @@
       <list>
         <option value="Vue Single File Component" />
         <option value="SCSS File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -113,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +145,11 @@
       <workItem from="1682405672977" duration="7000" />
       <workItem from="1682662249123" duration="6160000" />
       <workItem from="1682669768174" duration="1337000" />
+      <workItem from="1682915111915" duration="674000" />
+      <workItem from="1682917744629" duration="19000" />
+      <workItem from="1682919984545" duration="23000" />
+      <workItem from="1683006217753" duration="549000" />
+      <workItem from="1683008559468" duration="1459000" />
     </task>
     <servers />
   </component>

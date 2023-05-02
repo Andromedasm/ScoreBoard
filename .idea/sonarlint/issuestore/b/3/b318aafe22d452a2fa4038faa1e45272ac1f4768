@@ -1,10 +1,12 @@
 
-OWeb:TableWithoutCaptionCheck(" Add a description to this table.(†ï²Ÿ8Üç´ü0
-kphp:S103;"KSplit this 165 characters long line (which is greater than 120 authorized).(¤šÒ¤ıÿÿÿÿ8âè´ü0
-fphp:S103E"KSplit this 225 characters long line (which is greater than 120 authorized).(‡ü½8âè´ü0
-fphp:S103X"KSplit this 122 characters long line (which is greater than 120 authorized).(†8õŸ—·ü0
-fphp:S103Y"KSplit this 137 characters long line (which is greater than 120 authorized).(Ç ­ô8õŸ—·ü0
+OWeb:TableWithoutCaptionCheck," Add a description to this table.(†ï²Ÿ8Üç´ü0
+kphp:S103?"KSplit this 165 characters long line (which is greater than 120 authorized).(¤šÒ¤ıÿÿÿÿ8âè´ü0
+fphp:S103I"KSplit this 225 characters long line (which is greater than 120 authorized).(‡ü½8âè´ü0
+fphp:S103\"KSplit this 122 characters long line (which is greater than 120 authorized).(†8õŸ—·ü0
+fphp:S103]"KSplit this 137 characters long line (which is greater than 120 authorized).(Ç ­ô8õŸ—·ü0
 :php:S113"'Add a new line at the end of this file.8âè´ü0
-Œ	php:S1192A"kDefine a constant instead of duplicating this literal "<td class=\"px-6 py-4 whitespace-nowrap\">" 4 times.(·ôïûÿÿÿÿ8âè´ü0
-g	php:S1192A"FDefine a constant instead of duplicating this literal "</td>" 4 times.(·ôïûÿÿÿÿ8âè´ü0
-l	php:S48335"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28ãè´ü0
+Œ	php:S1192E"kDefine a constant instead of duplicating this literal "<td class=\"px-6 py-4 whitespace-nowrap\">" 4 times.(·ôïûÿÿÿÿ8âè´ü0
+g	php:S1192E"FDefine a constant instead of duplicating this literal "</td>" 4 times.(·ôïûÿÿÿÿ8âè´ü0
+G	php:S2003&"&Replace "include" with "include_once".(½áÒŒøÿÿÿÿ8‘ÍÕÙı0
+m	php:S4833&"LReplace "include" with namespace import mechanism through the "use" keyword.(½áÒŒøÿÿÿÿ8’ÍÕÙı0
+l	php:S48339"QReplace "require_once" with namespace import mechanism through the "use" keyword.(Ş¢¹28ãè´ü0
