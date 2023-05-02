@@ -35,9 +35,9 @@
         }
 
     </style>
-    <?php include 'sidebar.php'; ?>
 </head>
 <body class="bg-gray-100">
+<?php include 'sidebar.php'; ?>
 <div class="container mx-auto py-8">
     <h1 class="text-3xl mb-6">Admin Panel</h1>
 

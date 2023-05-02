@@ -39,19 +39,9 @@ animal.php,7\f\7f65df434391506dca703a4c7e0a0e4e6e3ddf23
 	login.php,a\7\a7beef4050e4205c8b59eb204ec9bb15ce01d9c0
 =
 scss/pure.css,5\9\59342cc4f8bd3e23c1056ca0db89521989607e83
-;
-sidebar.php,3\c\3cf4a720c216d250c65c4daf1507c9dd76ba45a7
-=
-dashboard.php,c\6\c66f4f3661413cbfa03d61550a667789c8a36818
 B
 manual_scoring.php,0\6\06e084a4de95917b1983e9742f752e9d3594708d
-;
-scoring.php,c\3\c3b790d85181edc10e53de77df581f3ca60b9fee
 <
 register.php,4\2\4260f3cafd4f8dcfdf5c725afbdbbc2d6e41708c
-9
-	admin.php,b\3\b318aafe22d452a2fa4038faa1e45272ac1f4768
-?
-leaderboard.php,9\b\9b11f009f09380914725ed6e038a896263ff2789
 @
 game_history.php,8\f\8f7ca717d6c75f5ee5c38475892fb987a4f915e6
