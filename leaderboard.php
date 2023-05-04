@@ -36,14 +36,17 @@
         }
         .player-name {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.8em;
             color: #4a5568; /* 更深的灰色 */
         }
 
         .player-score {
             font-style: italic;
-            font-size: 1.1em;
-            color: #718096; /* 浅灰色 */
+            font-size: 1.6em;
+            color: #2D3748; /* 更深的灰色，便于阅读 */
+        }
+        .leaderboard-row {
+            height: 3rem; /* 设置行高 */
         }
     </style>
     <?php include 'sidebar.php'; ?>

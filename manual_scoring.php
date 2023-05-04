@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="scss/pure.css" rel="stylesheet">
-    <title>Manual Scoring</title>
     <script>
         $(document).ready(function() {
             const allSelects = $("select[name^='player']");
@@ -66,7 +65,6 @@
             });
         });
     </script>
-    <?php include 'sidebar.php'; ?>
 </head>
 <body class="bg-gray-100">
 

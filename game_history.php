@@ -6,7 +6,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="scss/pure.css" rel="stylesheet">
     <title>Game History</title>
     <style>
         tbody tr:nth-child(odd) {
@@ -22,7 +21,6 @@
             font-size: 1.1em;
         }
     </style>
-    <?php include 'sidebar.php'; ?>
 </head>
 <body class="bg-gray-100">
 <div class="container mx-auto py-8">
@@ -46,7 +44,7 @@
         $conn = getDatabaseConnection();
 
         // 获取游戏历史记录
-        $query = "SELECT p.name, gr.game_round, gr.game_time, gr.score FROM game_records gr JOIN players p ON gr.player_id = p.id ORDER BY gr.game_time DESC";
+        $query = "SELECT p.name, gr.game_round, gr.game_time, gr.score, gr.multiplier FROM game_records gr JOIN players p ON gr.player_id = p.id ORDER BY gr.game_time DESC";
         $result = $conn->query($query);
 
         // 循环显示游戏历史记录
@@ -56,13 +54,27 @@
             echo "<td class=\"px-6 py-4 whitespace-nowrap round\">" . htmlspecialchars($row["game_round"]) . "</td>";
             echo "<td class=\"px-6 py-4 whitespace-nowrap\">" . htmlspecialchars($row["game_time"]) . "</td>";
 
-            // 根据分数显示相应的图标
-            $score = htmlspecialchars($row["score"]);
-            if ($score >= 3) {
+            // 计算名次
+            $score = intval($row["score"]);
+            $multiplier = intval($row["multiplier"]);
+            $rank = 0;
+
+            if ($score == 3 * $multiplier) {
+                $rank = 1;
+            } elseif ($score == 1 * $multiplier) {
+                $rank = 2;
+            } elseif ($score == -1 * $multiplier) {
+                $rank = 3;
+            } else {
+                $rank = 4;
+            }
+
+            // 根据名次显示相应的图标
+            if ($rank == 1) {
                 echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥇</td>";
-            } elseif ($score == 2) {
+            } elseif ($rank == 2) {
                 echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥈</td>";
-            } elseif ($score == 1) {
+            } elseif ($rank == 3) {
                 echo "<td class=\"px-6 py-4 whitespace-nowrap\">🥉</td>";
             } else {
                 echo "<td class=\"px-6 py-4 whitespace-nowrap\">🤡</td>";
